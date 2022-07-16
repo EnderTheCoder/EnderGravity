@@ -18,7 +18,7 @@ public class GravityCameraReset {
 
         ClientPlayerEntity player = (ClientPlayerEntity) event.getInfo().getRenderViewEntity();
 //        if (player.getAttribute())
-//        event.setRoll(90f);
+        //event.setRoll(90f);
     }
 
     @SubscribeEvent
@@ -28,8 +28,8 @@ public class GravityCameraReset {
 
     @SubscribeEvent
     public static void onPlayerEntityRender(RenderPlayerEvent event) {
-        event.getRenderer().getEntityModel().bipedRightLeg.rotationPointZ = 1.0f;
-        event.getMatrixStack().rotate(Vector3f.ZP.rotationDegrees(rotation++));
+        //event.getRenderer().getEntityModel().bipedRightLeg.rotationPointZ = 1.0f;
+        //event.getMatrixStack().rotate(Vector3f.ZP.rotationDegrees(rotation++));
 //        event.getMatrixStack().rotate(Vector3f.XP.rotationDegrees(rotation));
 //        event.getMatrixStack().rotate(Vector3f.YP.rotationDegrees(rotation));
     }
